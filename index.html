@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>DD Scoops</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="">
+  <header class="container-fluid bg-">
+    <!-- SECTION logo and name -->
+    <section class="row justify-content-center">
+      <div class="col-12 text-center">
+        <img class="img-fluid" src="http://www.genbutlerdet.org/wp-content/uploads/2016/07/devil-dogs.png" alt="">
+      </div>
+      <div class="col-12 text-center text-light">
+        <h1 class="tx-cerulean">Devil Dog Scoops</h1>
+      </div>
+    </section>
+  </header>
+  <main class="container-fluid ">
+    <!-- SECTION main screen -->
+    <section class="row">
+      <!-- STUB cart box -->
+      <div class="col-12 col-md-4">
+        <!-- ANCHOR checkout menu -->
+        <section class="row">
+          <div class="col-6 tx-cyber">
+            <h4>Name</h4>
+          </div>
+          <div class="col-2 tx-cyber">
+            <h4>Qty</h4>
+          </div>
+          <div class="col-2 tx-cyber">
+            <h4>Each</h4>
+          </div>
+          <div class="col-2 tx-cyber">
+            <h4>Total</h4>
+          </div>
+        </section>
+        <div id="cart" class="card bg-lava h-75">
+          <!-- NOTE boiler plate for java innerHTML -->
+          <!-- <section class="row tx-cyber">
+            <div class="col-6">'${item.name}'</div>
+            <div class="col-2">'${item.quantity}'</div>
+            <div class="col-2">'${item.price}'</div>
+            <div class="col-2">'${item.name}'</div>
+          </section> -->
+        </div>
+        <div class=" d-flex col-12 justify-content-between">
+          <p class="tx-cerulean fs-3"> Total: $ <span id="total"></span></p>
+          <button class="btn bg-cerulean fs-3" onclick="checkOut()">Buy</button>
+        </div>
+      </div>
+      <!-- STUB item box -->
+      <div class="col-12 col-md-8">
+        <!-- ANCHOR Toppings -->
+        <section class="row justify-content-start">
+          <h1 class="tx-lava">Toppings</h1>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgsprinkles h-100 img-fluid" onclick="buyItem('sprinkles')">Sprinkles</button>
+          </div>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgccb h-100 img-fluid" onclick="buyItem('Cheese Cake Bites')">Cheese Cake
+              Bites</button>
+          </div>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgcc h-100 img-fluid" onclick="buyItem('Chocolate Chips')">Chocolate
+              Chips</button>
+          </div>
+        </section>
+        <!-- ANCHOR Containers -->
+        <section class="row justify-content-start">
+          <h1 class="tx-lava">Container</h1>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgbowl h-100 img-fluid" onclick="buyItem('Bowl')">Bowl</button>
+          </div>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgcone h-100 img-fluid" onclick="buyItem('Cone')">Cone</button>
+          </div>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgwafflecone h-100 img-fluid" onclick="buyItem('Waffle Cone')">Waffle Cone</button>
+          </div>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgwafflebowl h-100 img-fluid" onclick="buyItem('Waffle Bowl')">Waffle Bowl</button>
+          </div>
+        </section>
+        <!-- ANCHOR Ice Creams -->
+        <section class="row justify-content-start">
+          <h1 class="tx-lava">Ice Cream</h1>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgvanilla h-100 img-fluid" onclick="buyItem('Vanilla')">Vanilla</button>
+          </div>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgchocolate h-100 img-fluid" onclick="buyItem('Chocolate')">Chocolate</button>
+          </div>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgstrawberry h-100 img-fluid" onclick="buyItem('Strawberry')">Strawberry</button>
+          </div>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgcookie h-100 img-fluid" onclick="buyItem('Cookie Dough')">Cookie Dough</button>
+          </div>
+          <div class="col-12 col-md-4 card card-height p-0">
+            <button class="btn btn-bgrr h-100 img-fluid" onclick="buyItem('Rockyroad')">Rockyroad</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
